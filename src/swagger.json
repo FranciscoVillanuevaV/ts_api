@@ -1,0 +1,37 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "Swagger doc",
+      "license": {
+        "name": "Test"
+      }
+    },
+    "servers": [
+      {
+        "url": "http://localhost:3230"
+      }
+    ],
+    "tags": [
+      {
+        "name": "hello",
+        "description": "controller just for hello"
+      }
+    ],
+    "paths": {
+      "/hello": {
+        "get": {
+          "tags": [
+            "hello"    
+          ],
+          "summary": "test if api is ok",
+          "operationId": "hello",
+          "responses": {
+            "200": {
+              "description": "Expected response to a valid request"
+            }
+          }
+        }
+      }
+    }
+  }
